@@ -1,0 +1,72 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div class="c-size d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">Nom Patient</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">Prénom Patient</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">CIN</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">Adresse</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">Téléphone</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">E-mail</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">Sexe</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="md-form">
+            <input type="text" id="form1" class="form-control" />
+            <label for="form1">Date De Naissance</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<section>
+  <p>
+    <button routerLink="/ListPatient" class="btn btn-2 btn-2a icon-arrow-right">
+      Enregistrer
+    </button>
+  </p>
+</section>
