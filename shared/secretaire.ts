@@ -1,5 +1,7 @@
 export class Secretaire {
-    id?: number;
-    label: string;
-    completed: boolean;
+    id: number;
+    userName: string;
+    password: string;
+    name: string;
+    lastName: string;
 }

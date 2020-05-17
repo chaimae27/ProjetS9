@@ -16,10 +16,13 @@ export class ListeDocteurComponent implements OnInit {
 
   showForm = false;
 
-  myDoctor: Docteur = {
-    label: '',
-    completed: false
-  }
+  // myDoctor: Docteur = {
+  //   id: '',
+  //   name: '',
+  //   userName: '',
+  //   lastName: ''
+  // }
+
   datas: any[];
   docteur: Docteur[] = [];
   resultDocteur: Docteur[] = [];
@@ -32,12 +35,6 @@ export class ListeDocteurComponent implements OnInit {
       $('.dataTables_length').addClass('bs-select');
     });
     this.dataGettin();
-    // $(document).ready(function () {
-    //   $('#datatable').dataTable();
-
-    //   $("[data-toggle=tooltip]").tooltip();
-
-    // });
   }
 
   dataGettin() {
@@ -55,9 +52,4 @@ export class ListeDocteurComponent implements OnInit {
         this.docteur = this.docteur.filter(docteur => docteur.id != id)
       })
   }
-
-  searchDocteur() {
-    this.resultDocteur = this.docteur.filter((docteur) => docteur.label.toLowerCase().includes(this.searchText.toLowerCase()))
-  }
-
 }

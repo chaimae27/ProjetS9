@@ -15,8 +15,10 @@ export class ListeLaborantinsComponent implements OnInit {
   showForm = false;
 
   myLaborantin: Laborantin = {
-    label: '',
-    completed: false
+    id: '',
+    name: '',
+    userName: '',
+    lastName: ''
   }
   datas: any[];
   laborantin: Laborantin[] = [];
@@ -49,8 +51,6 @@ export class ListeLaborantinsComponent implements OnInit {
       })
   }
 
-  searchLaborantin() {
-    this.resultLaborantin = this.laborantin.filter((laborantin) => laborantin.label.toLowerCase().includes(this.searchText.toLowerCase()))
-  }
+
 
 }

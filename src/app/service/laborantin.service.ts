@@ -7,7 +7,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LaborantinService {
-  private apiUrl = "http://localhost:58810/api/Laborantins";
+
+  private apiUrl = "http://localhost:51831/api/Laborantins";
   delete: any;
 
   constructor(private httpClient: HttpClient) { }
@@ -23,7 +24,6 @@ export class LaborantinService {
   deleteTask(id) {
     return this.httpClient.delete(`${this.apiUrl}/${id}`)
   }
-
 
   save(ss) {
     console.log(ss);

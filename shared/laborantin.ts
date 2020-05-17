@@ -1,5 +1,6 @@
 export class Laborantin {
-    id?: number;
-    label: string;
-    completed: boolean;
+    id: string;
+    name: string;
+    lastName: string;
+    userName: string;
 }

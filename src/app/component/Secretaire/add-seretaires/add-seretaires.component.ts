@@ -14,10 +14,7 @@ export class AddSeretairesComponent implements OnInit {
 
   showForm = false;
 
-  mySecretaire: Secretaire = {
-    label: '',
-    completed: false
-  }
+
   datas: any[];
   secretaire: Secretaire[] = [];
   resultSecretaire: Secretaire[] = [];
@@ -49,8 +46,6 @@ export class AddSeretairesComponent implements OnInit {
       })
   }
 
-  searchSecretaire() {
-    this.resultSecretaire = this.secretaire.filter((secretaire) => secretaire.label.toLowerCase().includes(this.searchText.toLowerCase()))
-  }
+
 
 }

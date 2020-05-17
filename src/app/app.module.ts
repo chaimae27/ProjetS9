@@ -1,3 +1,4 @@
+import { from } from 'rxjs';
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,6 +24,7 @@ import { AdminPanelComponent } from './component/dashbord/admin-panel/admin-pane
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataTablesModule } from 'angular-datatables';
 import { AddSeretairesComponent } from './component/Secretaire/add-seretaires/add-seretaires.component';
+import { UserInfoComponent } from './component/Docteur/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { AddSeretairesComponent } from './component/Secretaire/add-seretaires/ad
     AddLaborantinComponent,
     ListeLaborantinsComponent,
     AdminPanelComponent,
-    AddSeretairesComponent
+    AddSeretairesComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule, FormsModule,
